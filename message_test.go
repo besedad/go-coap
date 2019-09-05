@@ -57,7 +57,7 @@ func assertEqualMessages(t *testing.T, e, a Message) {
 }
 
 func TestMediaTypes(t *testing.T) {
-	types := []interface{}{TextPlain, AppLinkFormat, AppXML, AppOctets, AppExi, AppJSON}
+	types := []interface{}{TextPlain, AppLinkFormat, AppXML, AppOctets, AppExi, AppJSON, AppJSONDeflate}
 	exp := "coap.MediaType"
 	for _, typ := range types {
 		if got := fmt.Sprintf("%T", typ); got != exp {
